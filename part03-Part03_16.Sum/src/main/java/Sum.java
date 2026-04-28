@@ -1,0 +1,32 @@
+
+import java.util.ArrayList;
+
+public class Sum {
+
+    public static void main(String[] args) {
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(3);
+        numbers.add(2);
+        numbers.add(6);
+        numbers.add(-1);
+        System.out.println(sum(numbers)); // deve imprimir 10
+
+        numbers.add(5);
+        numbers.add(1);
+        System.out.println(sum(numbers)); // deve imprimir 16
+    }
+
+    public static int sum(ArrayList<Integer> numbers) {
+        int soma = 0;
+
+        for (int number : numbers) {
+            soma += number;
+        }
+
+        return soma;
+    }
+}
+
+
+
