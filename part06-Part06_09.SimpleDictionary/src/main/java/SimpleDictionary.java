@@ -17,3 +17,5 @@ public class SimpleDictionary {
         this.translations.put(word, translation);
     }
 }
+
+
